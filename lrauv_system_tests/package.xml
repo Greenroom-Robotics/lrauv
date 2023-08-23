@@ -6,5 +6,7 @@
   <description>lrauv_system_tests</description>
   <license>Apache V2</license>
   <maintainer email="team@greenroomrobotics.com">N/A</maintainer>
-
+  <depend>gz-garden</depend>
+  <depend>lrauv_gazebo_plugins</depend>
+  
 </package>

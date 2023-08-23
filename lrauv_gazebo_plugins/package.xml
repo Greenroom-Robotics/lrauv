@@ -6,5 +6,10 @@
   <description>lrauv_gazebo_plugins</description>
   <license>Apache V2</license>
   <maintainer email="team@greenroomrobotics.com">N/A</maintainer>
-
+  <depend>gz-garden</depend>
+  <depend>eigen</depend>
+  <depend>libpcl-all-dev</depend>
+  <depend>python3-empy</depend>
+  <depend>python3-numpy</depend>
+  
 </package>
