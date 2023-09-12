@@ -1,0 +1,25 @@
+name: lrauv
+version: "3.8"
+
+services:
+  lrauv:
+    container_name: lrauv
+    image: ghcr.io/greenroom-robotics/lrauv
+    build:
+      context: .
+      dockerfile: tools/setup/Dockerfile
+    environment:
+      DISPLAY: $DISPLAY
+      MESA_GL_VERSION_OVERRIDE: 3.3
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    devices:
+      - /dev/dri:/dev/dri
+    command: gz sim -v 4 marcel.sdf
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

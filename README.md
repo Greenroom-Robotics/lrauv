@@ -1,5 +1,16 @@
 # LRAUV Simulation
 
+LRAUV has been modified by Greenroom to support the Marcel AUV.
+
+## Usage
+
+* `git clone git@github.com:Greenroom-Robotics/lrauv.git` to clone
+* `docker compose build` to build
+* `xhost +` to allow docker to access the display
+* `docker compose up` to start
+
+## Original README
+
 This repository contains the libraries, plugins and other files for the simulation of the Tethys-class Long-Range AUV (LRAUV) from the Monterey Bay Aquarium Research Institute (MBARI).
 
 For documentation regarding this repository please refer to the [wiki](https://github.com/osrf/lrauv/wiki).
